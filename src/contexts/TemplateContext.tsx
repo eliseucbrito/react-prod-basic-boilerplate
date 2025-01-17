@@ -36,7 +36,7 @@ export function TemplateContextProvider({ children }: TemplateProviderProps) {
   );
 }
 
-export const TemplategesContext = (): TemplateContextProps => {
+export const useTemplategesContext = (): TemplateContextProps => {
   const context = useContext(TemplateContext);
   if (!context) {
     throw new Error("useTemplate must be used within a TemplateProvider");
